@@ -11,16 +11,19 @@
 <script lang="ts">
   import {Component,Vue} from 'vue-property-decorator';
 
+
   @Component
   export default class Counter extends Vue{
-    private count:number = 0
+    get count() {
+      return this.$store.state.count
+    }
 
     increment() {
-      this.count ++
+      this.$store.commit('increment')
     }
 
     decrement() {
-      this.count --
+      this.$store.commit('decrement')
     }
   }
 </script>

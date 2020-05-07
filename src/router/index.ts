@@ -9,7 +9,7 @@ const routes: RouteConfig[] = [
     path: '/counter',
     name: 'Counter',
     component: Counter,
-  }
+  },
 ];
 
 const router = new VueRouter({

@@ -9,21 +9,21 @@
   </div>
 </template>
 <script lang="ts">
-  import {Component,Vue} from 'vue-property-decorator';
+  import {Component, Vue} from 'vue-property-decorator';
 
 
   @Component
-  export default class Counter extends Vue{
+  export default class Counter extends Vue {
     get count() {
-      return this.$store.state.count
+      return this.$store.state.count;
     }
 
-    increment() {
-      this.$store.commit('increment')
+    public increment() {
+      this.$store.commit('increment');
     }
 
-    decrement() {
-      this.$store.commit('decrement')
+    public decrement() {
+      this.$store.commit('decrement');
     }
   }
 </script>

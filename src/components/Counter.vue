@@ -15,15 +15,15 @@
   @Component
   export default class Counter extends Vue {
     get count() {
-      return this.$store.state.count;
+      return this.$store.state.counter.count;
     }
 
     public increment() {
-      this.$store.commit('increment');
+      this.$store.commit('counter/increment');
     }
 
     public decrement() {
-      this.$store.commit('decrement');
+      this.$store.commit('counter/decrement');
     }
   }
 </script>

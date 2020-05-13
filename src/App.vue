@@ -2,6 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/counter">Counter</router-link>
+      &nbsp;
+      <router-link to="/shopping-cart">ShoppingCart</router-link>
     </div>
     <router-view/>
   </div>

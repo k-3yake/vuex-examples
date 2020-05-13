@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Counter from '../views/Counter.vue';
+import Counter from '../components/Counter.vue';
+import ShoppingCart from '@/components/ShoppingCartCounter.vue';
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes: RouteConfig[] = [
     path: '/counter',
     name: 'Counter',
     component: Counter,
+  },
+  {
+    path: '/shopping-cart',
+    name: 'ShoppingCart',
+    component: ShoppingCart,
   },
 ];
 

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Counter from '../components/Counter.vue';
-import ShoppingCart from '@/components/ShoppingCartCounter.vue';
+import ShoppingCart from '@/components/ShoppingCart.vue';
 
 Vue.use(VueRouter);
 

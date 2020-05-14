@@ -11,7 +11,6 @@
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
 
-
   @Component
   export default class Counter extends Vue {
     get count() {

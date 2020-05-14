@@ -1,5 +1,5 @@
 import {Module, MutationTree} from 'vuex';
-import {RootState} from '@/store/index'
+import {RootState} from '@/store'
 
 interface CounterState {
   count: number
